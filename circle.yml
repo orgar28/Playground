@@ -11,6 +11,6 @@ dependencies:
 test:
   pre:
     - mkdir -p $CIRCLE_TEST_REPORTS/testim/
-    - webdriver-manager start
+    - nohup bash -c "webdriver-manager start 2>&1 &"
   override:
     - testim --project "(Booking MD) Default Project_52245d20-4007-4d9e-4cb8-2f5c8b409074" --label "test" --host "testim-open-grid.cloudapp.net" --port 4444 --token "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2IjowLCJkIjp7InVpZCI6IkJvb2tNRDpDSSIsImVtYWlsIjoiYXNhZkBib29rLW1kLmNvbSJ9LCJpYXQiOjE0NDYxMTg1MTZ9.jg85R-ju8X9-cbVkcHQnDuuBIKpGzXgOl2_17M6DL1Q" --report-file $CIRCLE_TEST_REPORTS/testim/results.xml

@@ -7,8 +7,8 @@ var options = {
 //						extensions: [crxContent.extension]
 				}
     },
-		host:'testim-ci-grid.cloudapp.net',
-		port: 443,
+		host:'localhost',
+		port: 4444,
 		logLevel: 'verbose'
 };
 

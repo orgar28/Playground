@@ -1,0 +1,13 @@
+{
+  "name": "webdriver",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webdriverio": "^3.2.6"
+  }
+}
